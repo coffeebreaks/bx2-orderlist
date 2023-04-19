@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+
+<body>
+    <div class="order__wrapper">
+        <button onClick="document.getElementById('order__add__article').showModal()" class="open__order__dialog"> Lägg till artikel</button>
+  
+   
+
+    <dialog id="order__add__article" class="order__add__article">
+        <p class="order__back"> Stäng </p>   
+        <h3> Lägg till en produkt från prislista: 15%</h3>
+        <div class="order__wrapper">
+    
+            <div class="article__row" onClick="document.getElementById('order__add__details').showModal()">
+                <div>Avgår betalt på plats (Swish) </div>
+                <div class="article__price"> 0 kr </div>
+                <img src="icons/green/plus.png" class="add__article__button" />
+            </div>
+            <div class="article__row" onClick="document.getElementById('order__add__details').showModal()">
+                <div>Avgår betalt på plats (Swish) </div>
+                <div class="article__price"> 0 kr </div>
+                <img src="icons/green/plus.png"  class="add__article__button" />
+            </div>
+            <div class="article__row" onClick="document.getElementById('order__add__details').showModal()">
+                <div>Avgår betalt på plats (Swish) </div>
+                <div class="article__price"> 0 kr </div>
+                <img src="icons/green/plus.png"  class="add__article__button" />
+            </div>
+            <div class="article__row" onClick="document.getElementById('order__add__details').showModal()">
+                <div>Avgår betalt på plats (Swish) </div>
+                <div class="article__price"> 0 kr </div>
+                <img src="icons/green/plus.png"  class="add__article__button" />
+            </div>
+            <div class="article__row" onClick="document.getElementById('order__add__details').showModal()">
+                <div>Avgår betalt på plats (Swish) </div>
+                <div class="article__price"> 0 kr </div>
+                <img src="icons/green/plus.png"  class="add__article__button" />
+            </div>
+            <div class="article__row" onClick="document.getElementById('order__add__details').showModal()">
+                <div>Avgår betalt på plats (Swish) </div>
+                <div class="article__price"> 0 kr </div>
+                <img src="icons/green/plus.png"  class="add__article__button" />
+            </div>
+            <div class="article__row" onClick="document.getElementById('order__add__details').showModal()">
+                <div>Avgår betalt på plats (Swish) </div>
+                <div class="article__price"> 0 kr </div>
+                <img src="icons/green/plus.png"  class="add__article__button" />
+            </div>
+
+            
+
+
+            <dialog id="order__add__details" class="order__add__details">
+                
+                <h3> Lägg till pris, antal och rabatt </h3>
+                <form id="add-item">
+                    <p> Artikel </p>
+                    <input type="text" name="Artikel" placeholder="Artikel" disabled> </input>
+                    <p> Antal </p>
+                    <input type="text" name="Antal" placeholder="Antal"> </input>
+                    <p> Pris </p>
+                    <input type="text" name="Pris" placeholder="Pris"> </input>
+                    <p>Rabatt</p>
+                    <input type="text" name="Rabatt" placeholder="Rabatt %"> </input>
+                    <input type="submit" value="Lägg till"> </input>
+                    <p class="order__back"> Stäng </p>   
+                </form>
+                </div>
+                </div>
+            </dialog>
+
+        </div>
+</body>
+
+</html>
